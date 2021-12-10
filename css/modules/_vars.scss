@@ -1,0 +1,15 @@
+$wh: #ffffff;
+$accent: #FFB548;
+$black: #000000;
+$dark: #1A1917;
+$gray: #737475;
+$red: #e93830;
+$modal: rgba($dark, .9);
+
+$tr: .2s linear;
+
+@mixin media($w) {
+    @media only screen and (max-width: #{$w + 'px'}) {
+        @content;
+    }
+}
