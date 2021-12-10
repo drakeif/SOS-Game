@@ -227,7 +227,7 @@ h1 {
 .intro {
   height: 100vh;
   position: relative;
-  background: #1A1917 url("../../img/bg-main.jpg") no-repeat center/cover; }
+  background: #1A1917 url("../img/bg-main.jpg") no-repeat center/cover; }
   .intro::before {
     content: '';
     display: block;
