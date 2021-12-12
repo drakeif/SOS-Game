@@ -7,10 +7,11 @@
     <title>SOS</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 </head>
 <body id="body">
     <!-- HEADER -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">
@@ -48,7 +49,7 @@
         </div>
     </header>
     <!-- INTRO -->
-    <section class="intro">
+    <section class="intro" id="intro">
         <div class="container">
             <div class="intro__inner">
                 <div class="intro__about">
@@ -60,6 +61,35 @@
             <div class="intro__scroll">
                 <p>the story</p>
                 <img src="./icon/scroll-down.svg" alt="scroll down">
+            </div>
+        </div>
+    </section>
+    <!-- WHAT IS SOS -->
+    <section class="whatis" id="sos">
+        <div class="container">
+            <div class="whatis__inner">
+                <div class="whatis__left">
+                    <div class="whatis__about">
+                        <div class="whatis__title">
+                            <h3>what is sos?</h3>
+                            <h2>social battle royale game</h2>
+                        </div>
+                        <div class="whatis__describe">
+                            <p>
+                                Each round, <strong>you</strong> and <strong>15</strong> other contestants compete to
+                                escape a deadly island filled with monsters. The trick is: three people can survive. Will you run
+                                solo or form friendships with others to escape?
+                            </p>
+                            <p>
+                                Making the right decisions could be the
+                                difference between <span>life and death.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="whatis__right">
+                    <img src="./img/slider/screenshot-1.jpg" alt="1">
+                </div>
             </div>
         </div>
     </section>
@@ -94,6 +124,7 @@
         </div>
     </div>
 
+    <script src="./js/waypoints.min.js"></script>
     <script src="./js/app.js"></script>
 </body>
 </html>

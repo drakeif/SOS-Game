@@ -12,8 +12,14 @@
         align-items: center;
     }
     &__logo {
-        width: 5.5rem;
-        height: 5.5rem;
+        img {
+            width: 5.5rem;
+            height: 5.5rem;
+            @include media(500) {
+                width: 4rem;
+                height: 4rem;
+            }
+        }
         &.no--logo {
            visibility: hidden;
         }
@@ -160,4 +166,25 @@
             }
         }
     }
+    &.active {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: $dark;
+        padding: 1rem 0;
+        animation: head-down .5s linear;
+        @keyframes head-down {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+    }
+    &.no--bg {
+        background: transparent;
+    } 
 }

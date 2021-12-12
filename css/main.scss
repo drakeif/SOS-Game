@@ -1,5 +1,17 @@
 @import 'modules/fonts';
 @import 'modules/vars';
+*::-webkit-scrollbar {
+    width: 7px;
+}
+*::-webkit-scrollbar-track {
+    background: $accent; 
+}
+*::-webkit-scrollbar-thumb {
+    background: $red;
+}
+*::-webkit-scrollbar-thumb:hover {
+    background: darken($red, 10); 
+}
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -33,7 +45,7 @@ img {
     margin: 0 auto;
     padding: 0 1.5rem;
 }
-h1 {
+h1, h2 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 8rem;
     font-weight: 400;
@@ -47,6 +59,24 @@ h1 {
         font-size: 4rem;
     }
 }
+h3 {
+    font-family: 'Open sans', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+p {
+    font-family: 'Open sans', sans-serif; 
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.4;
+    @include media(500) {
+        font-size: 1.4rem;
+    }
+}
 @import 'modules/header';
 @import 'modules/intro';
+@import 'modules/whatis';
+
 @import 'modules/modal';
