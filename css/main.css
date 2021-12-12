@@ -397,7 +397,7 @@ p {
   padding: 9.6rem 0;
   position: relative;
   height: 80rem;
-  background: url("../../img/bg-image-1.jpg") no-repeat center/cover; }
+  background: #1A1917 url("../img/bg-image-1.jpg") no-repeat center/cover; }
   @media only screen and (max-width: 900px) {
     .whatis {
       height: 65rem;
