@@ -1,7 +1,7 @@
 .system {
     padding: 10rem 0;
     height: 96rem;
-    background: $dark url('../../img/bg-image-3.jpg') no-repeat center / cover;
+    background: $dark url('../img/bg-image-3.jpg') no-repeat center / cover;
     @include media(768) {
         padding: 5rem 0;
         height: 80rem;
@@ -42,7 +42,7 @@
         &::after {
             content: '';
             display: block;
-            background: url('../../img/line-croocked.png') no-repeat;
+            background: url('../img/line-croocked.png') no-repeat;
             width: 92px;
             height: 11px;
             position: absolute;

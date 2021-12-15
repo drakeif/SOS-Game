@@ -575,7 +575,7 @@ p {
 .system {
   padding: 10rem 0;
   height: 96rem;
-  background: #1A1917 url("../../img/bg-image-3.jpg") no-repeat center/cover; }
+  background: #1A1917 url("../img/bg-image-3.jpg") no-repeat center/cover; }
   @media only screen and (max-width: 768px) {
     .system {
       padding: 5rem 0;
@@ -615,7 +615,7 @@ p {
     .system__requirements::after {
       content: '';
       display: block;
-      background: url("../../img/line-croocked.png") no-repeat;
+      background: url("../img/line-croocked.png") no-repeat;
       width: 92px;
       height: 11px;
       position: absolute;
