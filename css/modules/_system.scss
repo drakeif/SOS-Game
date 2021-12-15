@@ -21,6 +21,9 @@
         }
         h3 {
             margin-bottom: 1rem;
+            @include media(500) {
+                font-size: 1.2rem;
+            }
         }
     }
     &__requirements {
@@ -76,7 +79,6 @@
                 margin-bottom: 1.5rem;
             }
             @include media(500) {
-                font-size: 1.2rem;
                 margin-bottom: 1rem;
             }
         }

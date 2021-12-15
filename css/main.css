@@ -595,6 +595,9 @@ p {
         margin-bottom: 5rem; } }
     .system__title h3 {
       margin-bottom: 1rem; }
+      @media only screen and (max-width: 500px) {
+        .system__title h3 {
+          font-size: 1.2rem; } }
   .system__requirements {
     position: relative;
     display: inline-grid;
@@ -647,7 +650,6 @@ p {
           margin-bottom: 1.5rem; } }
       @media only screen and (max-width: 500px) {
         .system__grid h3 {
-          font-size: 1.2rem;
           margin-bottom: 1rem; } }
     @media only screen and (max-width: 768px) {
       .system__grid p {
