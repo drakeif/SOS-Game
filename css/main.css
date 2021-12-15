@@ -572,6 +572,87 @@ p {
       top: 0;
       left: 0; }
 
+.system {
+  padding: 10rem 0;
+  height: 96rem;
+  background: #1A1917 url("../../img/bg-image-3.jpg") no-repeat center/cover; }
+  @media only screen and (max-width: 768px) {
+    .system {
+      padding: 5rem 0;
+      height: 80rem; } }
+  @media only screen and (max-width: 768px) {
+    .system {
+      padding: 3rem 0;
+      height: 60rem; } }
+  .system__title {
+    text-align: center;
+    margin-bottom: 10rem; }
+    @media only screen and (max-width: 768px) {
+      .system__title {
+        margin-bottom: 7rem; } }
+    @media only screen and (max-width: 500px) {
+      .system__title {
+        margin-bottom: 5rem; } }
+    .system__title h3 {
+      margin-bottom: 1rem; }
+  .system__requirements {
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: repeat(2, 27rem);
+    -ms-flex-line-pack: center;
+        align-content: center;
+    border-left: 0.1rem solid rgba(255, 255, 255, 0.2);
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.2); }
+    @media only screen and (max-width: 768px) {
+      .system__requirements {
+        grid-template-columns: repeat(2, 23rem); } }
+    @media only screen and (max-width: 500px) {
+      .system__requirements {
+        grid-template-columns: repeat(2, 1fr); } }
+    .system__requirements::after {
+      content: '';
+      display: block;
+      background: url("../../img/line-croocked.png") no-repeat;
+      width: 92px;
+      height: 11px;
+      position: absolute;
+      bottom: 0;
+      left: 5rem; }
+      @media only screen and (max-width: 768px) {
+        .system__requirements::after {
+          display: none; } }
+  .system__grid {
+    padding: 1rem;
+    width: 100%;
+    height: 13rem;
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
+    border-right: 0.1rem solid rgba(255, 255, 255, 0.2); }
+    @media only screen and (max-width: 768px) {
+      .system__grid {
+        height: 10rem; } }
+    @media only screen and (max-width: 500px) {
+      .system__grid {
+        height: 8.5rem; } }
+    @media only screen and (max-width: 450px) {
+      .system__grid {
+        height: 12rem; } }
+    .system__grid:nth-child(5) {
+      grid-column: span 2; }
+    .system__grid h3 {
+      color: #FFB548;
+      font-weight: 400;
+      margin-bottom: 2rem; }
+      @media only screen and (max-width: 768px) {
+        .system__grid h3 {
+          margin-bottom: 1.5rem; } }
+      @media only screen and (max-width: 500px) {
+        .system__grid h3 {
+          font-size: 1.2rem;
+          margin-bottom: 1rem; } }
+    @media only screen and (max-width: 768px) {
+      .system__grid p {
+        font-size: 1.4rem; } }
+
 .modal {
   display: none;
   padding: 0 3rem;
