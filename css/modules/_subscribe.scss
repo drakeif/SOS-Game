@@ -1,0 +1,86 @@
+.subscribe {
+    padding: 10rem 0;
+    background: $bg;
+    @include media(768) {
+        padding: 5rem 0;
+    }
+    @include media(500) {
+        padding: 3rem 0;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__left {
+        max-width: 44rem;
+        @include media(1150) {
+            display: none;
+        }
+    }
+    &__right {
+        max-width: 67rem;
+        h3 {
+            margin-bottom: 1rem;
+        }
+        h2 {
+            margin-bottom: 4rem;
+            @include media(500) {
+                margin-bottom: 2rem;
+            }
+        }
+        p {
+            margin-bottom: 4rem;
+            @include media(500) {
+                margin-bottom: 2rem;
+            }
+        }
+        form {
+            input:nth-child(1) {
+                border: none;
+                outline: none;
+                background: none;
+                padding: 1.5rem 3rem;
+                background-color: $card;
+                color: $wh;
+                font-family: 'Open sans';
+                font-size: 1.6rem;
+                font-weight: 700;
+                text-decoration: none;
+                cursor: pointer;
+                transition: $tr;
+                border-radius: .5rem;
+                @include media(500) {
+                    width: 100%;
+                    margin-bottom: 0.5rem;
+                    font-size: 1.4rem;
+                    padding: 1rem;
+                }
+            }
+            input:nth-child(2) {
+                border: none;
+                outline: none;
+                background: none;
+                padding: 1.5rem 3rem;
+                background-color: $accent;
+                color: $dark;
+                font-family: 'Open sans';
+                font-size: 1.6rem;
+                font-weight: 700;
+                text-decoration: none;
+                cursor: pointer;
+                transition: $tr;
+                border-radius: .5rem;
+                @include media(500) {
+                    width: 100%;
+                    font-size: 1.4rem;
+                    padding: 1rem;
+                }
+                &:hover {
+                    background-color: $red;
+                    color: $wh;
+                }
+            }
+        }
+    }
+}

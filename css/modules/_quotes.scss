@@ -1,0 +1,155 @@
+.quotes {
+    padding: 15rem 0;
+    position: relative;
+    height: 96rem;
+    background: $dark url('../../img/bg-image-4.jpg') no-repeat center / cover;
+    @include media(910) {
+        padding: 5rem 0;
+        height: 120rem;
+    }
+    @include media(600) {
+        padding: 3rem 0;
+        height: 110rem;
+    }
+    @include media(450) {
+        padding: 3rem 0;
+        height: 100rem;
+    }
+    &::after {
+        content: '';
+        display: block;
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(253,29,29,0) 70%, rgba(0,0,0,1) 100%);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    &__inner {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1;
+        @include media(910) {
+            flex-direction: column;
+            row-gap: 5rem;
+        }
+        @include media(450) {
+            flex-direction: column;
+            row-gap: 3rem;
+        }
+    }
+    &__left {
+        &_container {
+            max-width: 43rem;
+            h3 {
+                margin-bottom: 1rem;
+                @include media(600) {
+                    margin-bottom: .5rem;
+                }
+            }
+            h2 {
+                margin-bottom: 4rem;
+                @include media(600) {
+                    margin-bottom: 2rem;
+                }
+            }
+            p {
+                margin-bottom: 4rem;
+                @include media(600) {
+                    margin-bottom: 2rem;
+                }
+            }
+            button {
+                border: none;
+                outline: none;
+                background: none;
+                padding: 1.5rem;
+                background-color: $accent;
+                color: $dark;
+                font-family: 'Open sans';
+                font-size: 1.6rem;
+                font-weight: 700;
+                text-decoration: none;
+                cursor: pointer;
+                transition: $tr;
+                @include media(500) {
+                    font-size: 1.4rem;
+                    padding: 1rem;
+                }
+                &:hover {
+                    background-color: $red;
+                    color: $wh;
+                }
+            }
+        }
+    }
+    &__card + &__card {
+        margin-top: 3rem;
+        @include media(600) {
+            margin-top: 1.5rem;
+        }
+    }
+    &__card {
+        padding: 2rem 2rem 0 2rem;
+        width: 45rem;
+        height: 20rem;
+        border-radius: 1rem;
+        background: $card;
+        @include media(600) {
+            width: 100%;
+        }
+        &:nth-child(2) {
+            transform: translateX(-15rem);
+            @include media(1100) {
+                transform: translateX(0);
+            }
+        }
+        &_title {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        &_name {
+            display: flex;
+            align-items: center;
+            column-gap: 2rem;
+        }
+        &_pic {
+            background: $accent;
+            border-radius: 50%;
+            img {
+                transform: translate(-1rem, -.5rem);
+            }
+        }
+        &_about {
+            h5 {
+                color: $accent;
+                text-transform: uppercase;
+                font-size: 2.4rem;
+                font-weight: 400;
+            }
+            p {
+                color: $gray;
+            }
+        }
+        &_social {
+            width: 1.8rem;
+            height: 1.4rem;
+        }
+        &_describe {
+            margin-top: 2rem;
+        }
+        &_date {
+            margin-top: 1rem;
+            time {
+                font-size: 1.4rem;
+                color: $gray;
+            }
+        }
+    }
+}

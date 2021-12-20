@@ -1,0 +1,115 @@
+.footer {
+    padding: 3rem 0;
+    background: $bg;
+    @include media(500) {
+        padding: 1.5rem 0;
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        width: 9rem;
+        height: 9rem;
+        @include media(768) {
+            width: 6rem;
+            height: 6rem;
+        }
+    }
+    &__nav {
+        display: flex;
+        column-gap: 3rem;
+        @include media(1000) {
+            column-gap: 2rem;
+        }
+        @include media(900) {
+            display: none;
+        }
+    }
+    &__link {
+        padding: 0 1rem;
+        position: relative;
+        color: inherit;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-weight: 700;
+        white-space: nowrap;
+        z-index: 1;
+        &::after {
+            display: block;
+            content: '';
+            background: $accent;
+            width: 0;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: $tr;
+        }
+        &:hover {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+        column-gap: 3rem;
+        @include media(400) {
+            column-gap: 2rem;
+        }
+    }
+    &__separator {
+        width: 100%;
+        height: 0.1rem;
+        background: rgba($wh, .2);
+        margin: 3rem 0;
+        @include media(500) {
+            margin: 1.5rem 0;
+        }
+    }
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include media(768) {
+            flex-direction: column;
+            row-gap: 1rem;
+        }
+        p {
+            &:nth-child(1) {
+                color: $gray;
+                font-size: 1.4rem;
+                @include media(500) {
+                    font-size: 1.2rem;
+                }
+            }
+            &:nth-child(2) {
+                color: $wh;
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                @include media(500) {
+                    font-size: 1.2rem;
+                }
+                @include media(370) {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+.icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: $wh;
+    transition: $tr;
+    cursor: pointer;
+    &:hover {
+        fill: $red;
+    }
+}
+
